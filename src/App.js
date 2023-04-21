@@ -1,23 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import SearchSection from './components/searchsection/SearchSection'
+import CountryDetails from './pages/countrydetails/CountryDetails'
+import CountriesContainer from "./pages/countries/CountriesContainer";
+import { getCountries } from "./api/api";
 import './index.css'
-import { IoRecordingOutline } from "react-icons/io5";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
   const [search, setSearch] = useState('')
-  const [region, setRegion] = useState(null)
+  const [region, setRegion] = useState(undefined)
+  const [countries, setCountries] = useState([])
 
   console.log({ search })
   console.log({ region })
+
+  useEffect(() => {
+    getCountries()
+      .then(data => setCountries(data))
+  }, [])
+
   return (
     <div className={darkMode ? 'darkMode-main main' : 'lightMode-main main'}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <SearchSection darkMode={darkMode} setSearch={setSearch} search={search} region={region} setRegion={setRegion} />
-      <div className="grid-container">
-        Heyy there
-      </div>
+      <Routes>
+        <Route path='/' element={<CountriesContainer countries={countries}/>} />
+        <Route path='/detail/:id' element={<CountryDetails />} />
+      </Routes>
     </div>
   );
 }
