@@ -1,4 +1,42 @@
-.darkMode {
-    background-color: hsl(207, 26%, 17%);
-    border: 2px solid black;
+.darkMode-header {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
 }
+.lightMode-header {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(200, 15%, 8%);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header h1 {
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.darkMode-button {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.lightMode-button {
+    color: hsl(200, 15%, 8%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+.icon {
+    padding-right: 0.5em;
+}
+
