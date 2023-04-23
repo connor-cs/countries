@@ -1,0 +1,51 @@
+
+
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+}
+
+.card {
+    border-radius: 5px;
+    border: none;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.card > p > span {
+    font-weight: bold;
+}
+
+.darkMode-card {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.darkMode-card:hover {
+    background-color: hsl(209, 23%, 30%);
+}
+
+.lightMode-card {
+    color: hsl(200, 15%, 8%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+/* @media screen and (max-width: 375px) {
+    display: grid;
+} */
+
+@media all and (max-width: 375px) {
+    .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

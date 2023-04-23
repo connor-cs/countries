@@ -23,6 +23,7 @@
     padding: 10px;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
 }
 
 .dropdown:focus {
@@ -43,4 +44,17 @@
 
 .lightMode-search-container {
     background-color: hsl(0, 0%, 100%);
+}
+
+/* .darkMode-input ::placeholder {
+    color: hsl(0, 0%, 100%);
+} */
+
+@media screen and (max-width: 375) {
+    
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
