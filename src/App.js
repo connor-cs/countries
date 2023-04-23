@@ -28,17 +28,17 @@ function App() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <SearchSection darkMode={darkMode} setSearch={setSearch} search={search} region={region} setRegion={setRegion} />
       <Routes>
-        <Route path='/' element={<CountriesContainer countries={countries} darkMode={darkMode} handleCardClick={handleCardClick} />} />
-        <Route path='/detail/:id' element={<CountryDetails />} />
+        <Route path='/' element={<CountriesContainer countries={countries} darkMode={darkMode} />} />
+        <Route path='/detail/:id' element={<CountryDetails darkMode={darkMode}/>} />
       </Routes>
     </div>
   );
 
-  function handleCardClick(countryCode) {
-    getCountryDetails(countryCode)
-    .then(data=>console.log({data}))
+  // function handleCardClick(countryCode) {
+  //   getCountryDetails(countryCode)
+  //   .then(data=>console.log({data}))
 
-  }
+  // }
 }
 
 export default App;

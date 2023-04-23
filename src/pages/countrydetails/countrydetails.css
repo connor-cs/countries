@@ -1,0 +1,50 @@
+.back-button {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.darkMode-container {}
+
+.darkMode-back-button {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%)
+}
+
+.lightMode-back-button {
+  color: hsl(200, 15%, 8%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.details {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black
+}
+
+.darkMode-details-page {
+  color: hsl(0, 0%, 100%)
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid white
+}
+
+.right-side {
+  border: 2px solid yellow;
+}
+
+span {
+  font-weight: bold;
+}
