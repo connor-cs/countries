@@ -3,6 +3,7 @@
   padding: 5px;
   border-radius: 4px;
   border: none;
+  width: 30%
 }
 
 .container {
@@ -10,7 +11,10 @@
   justify-content: space-between;
 }
 
-.darkMode-container {}
+.country-flag {
+  max-width: 100%;
+}
+
 
 .darkMode-back-button {
   background-color: hsl(209, 23%, 22%);
@@ -27,7 +31,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black
+  border: 2px solid black;
+}
+
+.details-section {
+  display: flex;
+  justify-content: space-between;
 }
 
 .darkMode-details-page {
@@ -36,13 +45,24 @@
 
 .left-side {
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid white
 }
 
+.left-details-column{
+  padding: 2rem;
+  margin-right: 20px;
+}
+
+.right-details-column{
+  margin-left: 20px;
+}
+
 .right-side {
   border: 2px solid yellow;
+  padding: 3rem;
 }
 
 span {
