@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import CountryDetails from '../../pages/countrydetails/CountryDetails'
 
-export default function BorderCountries({country}) {
-  console.log(country)
+export default function BorderCountries({country, darkMode}) {
+
+  const navigate = useNavigate()
   return (
-    <Link to={`/detail/${country}`} className='link'><p>{country}</p></Link> 
+   <p className={darkMode ? 'darkMode-country-link link' : 'lightMode-country-link link'} onClick={()=>navigate(`/detail/${country}`)}>{country}</p>
   )
 }

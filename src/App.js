@@ -33,12 +33,6 @@ function App() {
       </Routes>
     </div>
   );
-
-  // function handleCardClick(countryCode) {
-  //   getCountryDetails(countryCode)
-  //   .then(data=>console.log({data}))
-
-  // }
 }
 
 export default App;
