@@ -16,7 +16,7 @@ export default function CountryDetails({ darkMode }) {
       .catch((error) => console.log(error));
   }, [params]);
 
-  console.log(details);
+  // console.log(details);
 
   if (!details) return <h1>Loading...</h1>;
 
@@ -26,7 +26,6 @@ export default function CountryDetails({ darkMode }) {
   const currencies = Object.entries(details.currencies).map((curr) => curr[1].name);
   const borderingCountries = details.borders
   
-  console.log({ borderingCountries });
   return (
     <div
       className={
@@ -90,7 +89,7 @@ export default function CountryDetails({ darkMode }) {
           </div>
           <div className="border-countries">
             <span>Border Countries: </span>
-            {borderingCountries ? borderingCountries.map(country=><BorderCountries country={country} />) : 'no bordering countries'}
+            {borderingCountries ? borderingCountries.map(country=><BorderCountries country={country} darkMode={darkMode}/>) : 'no bordering countries'}
           </div>
         </div>
       </main>

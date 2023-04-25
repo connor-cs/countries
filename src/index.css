@@ -23,20 +23,3 @@ code {
   background-color: hsl(0, 0%, 98%);
 }
 
-.link {
-  text-decoration: none;
-  cursor: pointer;
-  padding: 3px;
-  border-radius: 4px;
-  width: fit-content;
-}
-
-.lightMode-country-link {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(200, 15%, 8%);
-}
-
-.darkMode-country-link {
-  background-color: hsl(209, 23%, 22%);
-  color: hsl(0, 0%, 100%);
-}
