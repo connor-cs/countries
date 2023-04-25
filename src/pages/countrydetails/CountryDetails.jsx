@@ -52,39 +52,16 @@ export default function CountryDetails({ darkMode }) {
           <h1>{details.name.common ? details.name.common : "none"}</h1>
           <div className="details-section">
             <section className="left-details-column">
-              <p>
-                <span>Native Name: </span>
-                {details.name.nativeName[languageName].common}
-              </p>
-              <p>
-                <span>Population: </span>
-                {Number(details.population).toLocaleString("en-us")}
-              </p>
-              <p>
-                <span>Region: </span>
-                {details.region}
-              </p>
-              <p>
-                <span>Sub Region: </span> {details.subregion}
-              </p>
-              <p>
-                <span>Capital: </span>
-                {details.capital}
-              </p>
+              <p><span>Native Name: </span>{details.name.nativeName[languageName].common}</p>
+              <p><span>Population: </span>{Number(details.population).toLocaleString("en-us")}</p>
+              <p><span>Region: </span>{details.region}</p>
+              <p><span>Sub Region: </span> {details.subregion}</p>
+              <p><span>Capital: </span>{details.capital}</p>
             </section>
             <section className="right-details-column">
-              <p>
-                <span>Top Level Domain: </span>
-                {details.tld}
-              </p>
-              <p>
-                <span>Currencies: </span>
-                {currencies.join(', ')}
-              </p>
-
-              <p>
-                <span>Languages: </span>{allLanguages.join(', ')}
-              </p>
+              <p><span>Top Level Domain: </span>{details.tld}</p>
+              <p><span>Currencies: </span>{currencies.join(', ')}</p>
+              <p><span>Languages: </span>{allLanguages.join(', ')}</p>
             </section>
           </div>
           <div className="border-countries">

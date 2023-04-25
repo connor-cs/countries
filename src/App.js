@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import SearchSection from './components/searchsection/SearchSection'
 import CountryDetails from './pages/countrydetails/CountryDetails'
 import CountriesContainer from "./pages/countries/CountriesContainer";
-import { getCountries, getCountryDetails } from "./api/api";
+import { getCountries } from "./api/api";
 import './index.css'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   const [search, setSearch] = useState('')
   const [region, setRegion] = useState(undefined)
   const [countries, setCountries] = useState([])
-  const [countryDetails, setCountryDetails] = useState()
+
 
   // console.log({ search })
   // console.log({ region })
