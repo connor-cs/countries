@@ -49,3 +49,22 @@
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+@media all and (max-width: 1545px) {
+    .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media all and (max-width: 1130px) {
+    .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (max-width: 750px) {
+    .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
