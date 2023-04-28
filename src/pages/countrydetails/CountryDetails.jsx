@@ -34,7 +34,7 @@ export default function CountryDetails({ darkMode }) {
           : "lighMode-details-page details"
       }
     >
-      <main className={darkMode ? "darkmode-container container": "lightMode-container container"}>
+      <main className="container">
         <div className="left-side">
           <button
             className={darkMode ? "darkMode-back-button back-button": "lighMode-back-button back-button"}
