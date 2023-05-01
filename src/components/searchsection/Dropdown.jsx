@@ -1,17 +1,22 @@
-import React from 'react'
+import React from "react";
 
 export default function Dropdown({ region, setRegion }) {
-    return (
-        <select
-            className="dropdown"
-            name="region"
-            id="region"
-            onChange={(e) => setRegion(e.target.value)} value={region}>
-            <option value="Africa" >Africa</option>
-            <option value="America">America</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="Oceania">Oceania</option>
-        </select>
-    )
+  return (
+    <select
+      className="dropdown"
+      name="region"
+      id="region"
+      onChange={(e) => setRegion(e.target.value)}
+      value={region}
+    >
+      <option value="" disabled>
+        Select Region
+      </option>
+      <option value="Africa">Africa</option>
+      <option value="America">America</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+  );
 }

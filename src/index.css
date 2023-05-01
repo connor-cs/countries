@@ -32,10 +32,33 @@ code {
   background-color: hsl(0, 0%, 100%);
 }
 
+.lightMode-main .input {
+  color: hsl(200, 15%, 8%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.lightMode-main .dropdown {
+  color: hsl(200, 15%, 8%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.darkMode-main .dropdown {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%)
+}
+
+.darkMode-main .input {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
 
 .darkMode-main .details {
   color: hsl(0, 0%, 100%)
 }
+.darkMode-main .search-icon {
+  color: hsl(0, 0%, 100%);
+}
+
 
 .darkMode-main .card {
   background-color: hsl(209, 23%, 22%);

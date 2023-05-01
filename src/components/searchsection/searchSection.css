@@ -31,9 +31,9 @@
 }
 
 
-/* .darkMode-input ::placeholder {
+.darkMode-input ::placeholder {
     color: hsl(0, 0%, 100%);
-} */
+}
 
 @media screen and (max-width: 375) {
     

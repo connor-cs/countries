@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     getCountries(search, region)
       .then(data => setCountries(data))
-      .then(console.log(countries))
+      .catch(error=>window.alert(error))
   }, [search, region])
 
   return (
