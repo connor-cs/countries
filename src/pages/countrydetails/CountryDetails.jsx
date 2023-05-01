@@ -5,7 +5,7 @@ import { getCountryDetails } from "../../api/api";
 import BorderCountries from "../../components/borderCountries/BorderCountries";
 import { BiArrowBack } from "react-icons/bi";
 
-export default function CountryDetails({ darkMode }) {
+export default function CountryDetails() {
   const params = useParams();
   const navigate = useNavigate();
   const [details, setdetails] = useState(null);
@@ -28,16 +28,12 @@ export default function CountryDetails({ darkMode }) {
   
   return (
     <div
-      className={
-        darkMode
-          ? "darkMode-details-page details"
-          : "lighMode-details-page details"
-      }
+      className= "details"
     >
       <main className="container">
         <div className="left-side">
           <button
-            className={darkMode ? "darkMode-back-button back-button": "lighMode-back-button back-button"}
+            className="back-button"
             onClick={() => navigate("/")}
           >
             <BiArrowBack /> Back
@@ -66,7 +62,7 @@ export default function CountryDetails({ darkMode }) {
           </div>
           <div className="border-countries">
             <span>Border Countries: </span>
-            {borderingCountries ? borderingCountries.map(country=><BorderCountries country={country} darkMode={darkMode}/>) : 'no bordering countries'}
+            {borderingCountries ? borderingCountries.map(country=><BorderCountries country={country} />) : 'no bordering countries'}
           </div>
         </div>
       </main>

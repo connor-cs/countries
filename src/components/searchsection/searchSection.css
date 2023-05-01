@@ -10,15 +10,7 @@
     border-radius: 3px;
 }
 
-.darkMode-input {
-    background-color: hsl(209, 23%, 22%);
-    color: hsl(0, 0%, 100%)
-}
 
-.darkMode-dropdown {
-    background-color: hsl(209, 23%, 22%);
-    color: hsl(0, 0%, 100%);
-}
 .dropdown {
     padding: 10px;
     border-radius: 3px;
@@ -37,14 +29,7 @@
     border: none;
     border-radius: 3px;
 }
-.darkMode-search-container {
-    background-color: hsl(209, 23%, 22%);
-    color: hsl(0, 0%, 100%);
-}
 
-.lightMode-search-container {
-    background-color: hsl(0, 0%, 100%);
-}
 
 /* .darkMode-input ::placeholder {
     color: hsl(0, 0%, 100%);

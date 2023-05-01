@@ -24,18 +24,8 @@
     font-weight: bold;
 }
 
-.darkMode-card {
-    background-color: hsl(209, 23%, 22%);
-    color: hsl(0, 0%, 100%);
-}
-
 .darkMode-card:hover {
     background-color: hsl(209, 23%, 30%);
-}
-
-.lightMode-card {
-    color: hsl(200, 15%, 8%);
-    background-color: hsl(0, 0%, 100%);
 }
 
 

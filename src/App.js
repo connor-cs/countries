@@ -26,10 +26,10 @@ function App() {
   return (
     <div className={darkMode ? 'darkMode-main main' : 'lightMode-main main'}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <SearchSection darkMode={darkMode} setSearch={setSearch} search={search} region={region} setRegion={setRegion} />
+      <SearchSection setSearch={setSearch} search={search} region={region} setRegion={setRegion} />
       <Routes>
-        <Route path='/' element={<CountriesContainer countries={countries} darkMode={darkMode} />} />
-        <Route path='/detail/:id' element={<CountryDetails darkMode={darkMode}/>} />
+        <Route path='/' element={<CountriesContainer countries={countries} />} />
+        <Route path='/detail/:id' element={<CountryDetails />} />
       </Routes>
     </div>
   );

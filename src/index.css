@@ -18,8 +18,35 @@ code {
 .darkMode-main {
   background-color: hsl(207, 26%, 17%)
 }
-
 .lightMode-main {
   background-color: hsl(0, 0%, 98%);
 }
 
+.darkMode-main .back-button .link .dropdown .search-container .input .search{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%)
+}
+
+.lightMode-main .back-button .link .dropdown .search-container .input{
+  color: hsl(200, 15%, 8%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+.darkMode-main .details {
+  color: hsl(0, 0%, 100%)
+}
+
+.darkMode-main .card {
+  background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.lightMode-main .card {
+  color: hsl(200, 15%, 8%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.darkMode-main .search {
+
+}

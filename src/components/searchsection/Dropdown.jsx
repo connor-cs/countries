@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Dropdown({ darkMode, region, setRegion }) {
+export default function Dropdown({ region, setRegion }) {
     return (
         <select
-            className={darkMode ? 'darkMode-dropdown dropdown' : 'lightMode-dropdown dropdown'}
+            className="dropdown"
             name="region"
             id="region"
             onChange={(e) => setRegion(e.target.value)} value={region}>

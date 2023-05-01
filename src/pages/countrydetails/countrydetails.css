@@ -25,15 +25,15 @@
 }
 
 
-.darkMode-back-button {
+/* .darkMode-back-button {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%)
-}
+} */
 
-.lightMode-back-button {
+/* .lightMode-back-button {
   color: hsl(200, 15%, 8%);
   background-color: hsl(0, 0%, 100%);
-}
+} */
 
 .details {
   height: 100vh;
@@ -46,10 +46,6 @@
 .details-section {
   display: flex;
   justify-content: space-between;
-}
-
-.darkMode-details-page {
-  color: hsl(0, 0%, 100%)
 }
 
 .left-side {
@@ -88,7 +84,7 @@ span {
   width: fit-content;
 }
 
-.lightMode-country-link {
+/* .lightMode-country-link {
   background-color: hsl(0, 0%, 100%);
   color: hsl(200, 15%, 8%);
 }
@@ -96,7 +92,7 @@ span {
 .darkMode-country-link {
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
-}
+} */
 
 @media screen and (max-width:375px) {
 
